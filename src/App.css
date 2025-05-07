@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+};
+
+@import './colors.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--almost-white);
+}
+
+.App {
+    padding: 28px 16px 80px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

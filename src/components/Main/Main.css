@@ -1,0 +1,160 @@
+
+
+.intro {
+    margin-top: 32px;
+}
+
+.intro__img {
+    width: 100%;
+    height: auto;
+}
+
+.intro__heading {
+    margin-top: 24px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+
+    color: var(--dark-space-blue);
+}
+
+.intro__subheading {
+    margin-top: 16px;
+
+    /* We dive into the nex */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+
+    color: var(--gunmetal);
+}
+
+.intro__btn {
+    margin-top: 24px;
+    border: none;
+    width: 185px;
+    height: 48px;
+    background-color: var(--light-vermillion);
+
+    text-transform: uppercase;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4.375px;
+
+    color: var(--dark-space-blue);
+}
+
+.new {
+    margin-top: 64px;
+    padding: 24px 20px 24px 21px;
+    width: 100%;
+
+    background-color: var(--dark-space-blue);
+}
+
+.new__title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+
+    color: var(--yellow);
+}
+
+.new__text-content {
+    margin-top: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.new__group:not(:last-child) {
+    padding-bottom: 29px;
+    border-bottom: 1px solid var(--gunmetal);
+}
+
+.new__group-heading {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: var(--almost-white);
+}
+
+.new__group-subheading {
+    margin-top: 8px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+
+    color: var(--silver);
+}
+
+.cards {
+    margin-top: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card {
+
+    display: flex;
+    gap: 24px;
+}
+
+.card__img {
+    width: 100px;
+    height: 129px;
+}
+
+.card__index {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+
+    color: var(--light-vermillion);
+}
+
+.card__heading {
+    margin-top: 12px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: var(--dark-space-blue);
+}
+
+.card__subheading {
+    margin-top: 9px;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+
+    color: var(--gunmetal);
+}
