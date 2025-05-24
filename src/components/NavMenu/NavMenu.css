@@ -68,6 +68,11 @@
     line-height: 24px;
 
     color: var(--dark-space-blue);
+    transition: color .3s ease-in-out;
+}
+
+.navbar__link:hover {
+    color: var(--light-vermillion);
 }
 
 .navbar__hamburger-close {
