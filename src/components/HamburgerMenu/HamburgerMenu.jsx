@@ -17,6 +17,20 @@ const HamburgerMenu = () => {
         setMenuIsOpen(false);
     }
 
+    // function updateNavbar(e) {
+    //     const match = e.matches;
+    //     console.log(match);
+    //     if(match) {
+    //         navbarMenu.removeAttribute('inert');
+    //     }else {
+    //         navbarMenu.setAttribute('inert', '');
+    //     }
+    // }
+
+    // const closeMenu = () => {
+    //     navbarMenu.classList.remove('navbar__menu--show');
+    // }
+
     const menuLinks = [
         {
             title: "Home",
@@ -40,22 +54,22 @@ const HamburgerMenu = () => {
             <a className="navbar__home-link" href="#">
                 <img className="navbar__logo" src={Logo} alt="logo" />
             </a>
-            <img src={HamburgerOpen} onClick={openMenu} alt="" />
-            {menuIsOpen &&
-                <ul className="navbar__menu">
-                    {menuLinks.map((item, index) => (
-                        <li className="navbar__list" key={index}>
-                            <a className="navbar__link" href="#">
-                                {item.title}
-                            </a>
-                        </li>
-                    ))}
-                    <img className="navbar__hamburger-close" onClick={closeMenu} src={HamburgerClose} alt="hamburger close" />
-                </ul>
-            }
-            
+            <img className="navbar__hamburger-open" onClick={openMenu} src={HamburgerOpen} alt="" />
+            <div className={`navbar__overlay${menuIsOpen ? ' navbar__overlay--show': ''}`} onClick={closeMenu} ></div>
+            <ul className={`navbar__menu${menuIsOpen ? ' navbar__menu--show' : ''}`} 
+                {...(menuIsOpen ? '' : { "aria-hidden": true, inert: true })}
+            >
+                {menuLinks.map((item, index) => (
+                    <li className="navbar__list" key={index}>
+                        <a className="navbar__link" href="#">
+                            {item.title}
+                        </a>
+                    </li>
+                ))}
+                <img className="navbar__hamburger-close" src={HamburgerClose} onClick={closeMenu} alt="hamburger close" />
+            </ul>
         </nav>
-  );
+    );
 };
 
 export default HamburgerMenu;
