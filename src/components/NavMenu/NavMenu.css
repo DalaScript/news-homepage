@@ -119,5 +119,7 @@
     .navbar__link {
         font-size: 15px;
         line-height: 26px;
+
+        color: var(--gunmetal);
     }
 }
