@@ -1,9 +1,11 @@
 import React from 'react';
 import './Main.css'
-import IntroImage from '../../assets/images/image-web-3-mobile.jpg';
+import IntroImageMobile from '../../assets/images/image-web-3-mobile.jpg';
+import IntroImageDesktop from '../../assets/images/image-web-3-desktop.jpg';
 import RetroPcs from '../../assets/images/image-retro-pcs.jpg';
 import TopLaptops from '../../assets/images/image-top-laptops.jpg';
 import GamingImg from '../../assets/images/image-gaming-growth.jpg';
+import Card from '../Card/Card';
 
 
 const Main = () => {
@@ -44,7 +46,10 @@ const Main = () => {
     return (
         <main>
             <section className='intro'>
-                <img className='intro__img' src={IntroImage} alt="" />
+                <picture>
+                    <source media="(min-width: 764px)" srcSet={IntroImageDesktop} />
+                    <img className='intro__img' src={IntroImageMobile} alt="" />
+                </picture>
                 <div className='intro__text-content'>
                     <h2 className='intro__heading'>
                         The Bright Future of Web 3.0?
@@ -72,17 +77,7 @@ const Main = () => {
                 </ul>
             </section>
             <section className='cards'>
-
-                {cardsData.map((data, index) => (
-                    <div className='card'>
-                        <img className='card__img' src={data.image} alt='illustration' />
-                        <div className="card__text-content">
-                            <span className='card__index'>{`0${index + 1}`}</span>
-                            <h2 className='card__heading'>{data.heading}</h2>
-                            <p className="card__subheading">{data.subheading}</p>
-                        </div>
-                    </div>
-                ))}
+                {cardsData.map((data, index) => (<Card key={index} img={data.image} index={`0${index + 1}`} heading={data.heading} subheading={data.subheading} />))}
             </section>
         </main>
   )
