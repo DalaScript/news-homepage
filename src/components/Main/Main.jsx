@@ -54,13 +54,15 @@ const Main = () => {
                     <h2 className='intro__heading'>
                         The Bright Future of Web 3.0?
                     </h2>
-                    <p className='intro__subheading'>
-                        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-                        But is it really fulfilling its promise?
-                    </p>
-                    <button className='intro__btn'>
-                        Read more
-                    </button>
+                    <div className="intro__text-inner">
+                        <p className='intro__subheading'>
+                            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                            But is it really fulfilling its promise?
+                        </p>
+                        <button className='intro__btn'>
+                            Read more
+                        </button>
+                    </div>
                 </div>
             </section>
             <section className='new'>

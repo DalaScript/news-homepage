@@ -160,6 +160,32 @@ picture {
         height: 300px;
     }
 
+    .intro__text-content {
+        margin-top: 30px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .intro__text-content > * {
+        margin-top: 0;
+        flex-basis: 350px;
+    }
+
+    .intro__heading {
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    .intro__subheading {
+        margin-top: 0;
+    }
+
+    .intro__btn {
+        margin-top: 29px;
+    }
+
     .new {
         margin-top: 0;
         margin-left: 30px;
