@@ -33,7 +33,7 @@ Users should be able to:
 
 ### 📸 Screenshot
 
-![Live Preview Screenshot](./assets/images/screenshot/screenshot.jpg)
+![Live Preview Screenshot](./src/assets/images/screenshot/screenshot.jpg)
 
 ### 🔗 Links
 
