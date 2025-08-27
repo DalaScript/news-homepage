@@ -1,4 +1,4 @@
-# News Homepage Solution | Frontend Mentor
+# News Homepage | Frontend Mentor
 
 **Challenge 28**
 
@@ -42,9 +42,9 @@ Users should be able to:
 
 ### 🛠️ Built with
 
-  - [React](https://reactjs.org/) - JS library
+  - [React](https://reactjs.org/)
   - React Hooks – useState, useEffect, etc.
-  - JavaScript (ES6+) – For component logic and interactivity
+  - JavaScript
   - CSS Modules
   - Flexbox
   - Mobile-first workflow
